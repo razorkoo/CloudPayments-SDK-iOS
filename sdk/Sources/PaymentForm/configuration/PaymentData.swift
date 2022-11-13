@@ -22,12 +22,13 @@ public class PaymentData {
     private (set) var cultureName: String?
     private (set) var payer: String?
     private (set) var jsonData: String?
-    private (set) var orderId: Int?
+    private (set) var orderId: Int
     
     var cryptogram: String?
     
-    public init(publicId: String) {
+    public init(publicId: String, orderId: Int) {
         self.publicId = publicId
+        self.orderId = orderId
     }
     
     public func setAmount(_ amount: String) -> PaymentData {
@@ -90,7 +91,6 @@ public class PaymentData {
             let jsonString = String(data: data, encoding: .utf8)
             self.jsonData = jsonString
         }
-        
         return self
     }
 }
