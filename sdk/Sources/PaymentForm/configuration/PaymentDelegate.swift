@@ -11,6 +11,7 @@ import Foundation
 public protocol PaymentDelegate: class {
     func onPaymentFinished(_ transactionId: Int?, _ orderId: Int)
     func onPaymentFailed(_ errorMessage: String?, _ orderId: Int)
+    func onPaymentCanceled(_ orderId: Int)
 }
 
 public protocol PaymentUIDelegate: class {
@@ -33,6 +34,10 @@ internal class PaymentDelegateImpl {
     
     func paymentFailed(_ errorMessage: String?, _ orderId: Int) {
         self.delegate?.onPaymentFailed(errorMessage, orderId)
+    }
+    
+    func paymentCanceled(_ orderId: Int) {
+        self.delegate?.onPaymentCanceled(orderId)
     }
 }
 

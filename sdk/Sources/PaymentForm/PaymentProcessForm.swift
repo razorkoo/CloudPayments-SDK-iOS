@@ -213,7 +213,12 @@ public class PaymentProcessForm: PaymentForm {
     
     @objc func progressIconTapped() {
         if case .failed = self.state {
-            self.dismiss(animated: true)
+            self.dismiss(animated: true) { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                self.configuration.paymentDelegate.paymentCanceled(self.configuration.paymentData.orderId)
+            }
         }
     }
 }
