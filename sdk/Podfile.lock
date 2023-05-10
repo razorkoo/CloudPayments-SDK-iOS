@@ -1,21 +1,21 @@
 PODS:
   - CloudpaymentsNetworking (1.0.1)
   - PromiseKit/CorePromise (6.18.1)
-  - YandexLoginSDK (2.0.2)
-  - YandexMobileMetrica/Dynamic (4.4.0):
-    - YandexMobileMetrica/Dynamic/Core (= 4.4.0)
-    - YandexMobileMetrica/Dynamic/Crashes (= 4.4.0)
-  - YandexMobileMetrica/Dynamic/Core (4.4.0)
-  - YandexMobileMetrica/Dynamic/Crashes (4.4.0):
-    - YandexMobileMetrica/Dynamic/Core
-  - YandexPaySDK/Dynamic (1.2.0):
+  - YandexLoginSDK (2.1.1)
+  - YandexMobileMetrica/Static (4.5.0):
+    - YandexMobileMetrica/Static/Core (= 4.5.0)
+    - YandexMobileMetrica/Static/Crashes (= 4.5.0)
+  - YandexMobileMetrica/Static/Core (4.5.0)
+  - YandexMobileMetrica/Static/Crashes (4.5.0):
+    - YandexMobileMetrica/Static/Core
+  - YandexPaySDK/Static (1.3.6):
     - PromiseKit/CorePromise (~> 6.0)
-    - YandexLoginSDK (~> 2.0.2)
-    - YandexMobileMetrica/Dynamic
+    - YandexLoginSDK (~> 2.1.1)
+    - YandexMobileMetrica/Static
 
 DEPENDENCIES:
   - CloudpaymentsNetworking (from `../networking`)
-  - YandexPaySDK/Dynamic
+  - YandexPaySDK/Static
 
 SPEC REPOS:
   trunk:
@@ -31,10 +31,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CloudpaymentsNetworking: b03a482d4200209a46f27da663d235228bab5071
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
-  YandexLoginSDK: cd407482207b4b7da75c5f7d7fd2fdd6a604c325
-  YandexMobileMetrica: baf7cea47cb87fc9af963c4f747ce8dd7df3d7c0
-  YandexPaySDK: 77bfc6e67d889e26f1f3926c2a6cdfd5ccbb6a52
+  YandexLoginSDK: ad9a07aca36a7748353af17c9cbbf2b83be9ba26
+  YandexMobileMetrica: 7dafc7d224077d4443ab3a587b82b24e9b6cc9c7
+  YandexPaySDK: 94cfd7f426b8fcdee6eda91e53d281da17489e28
 
-PODFILE CHECKSUM: 2a38317451fe7ece016be373d0ae4255fffc0ceb
+PODFILE CHECKSUM: 9078dbc002a604fa6a11f64257dd99e038a6809e
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
